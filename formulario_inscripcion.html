@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro para un Torneo de Videojuegos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h2>Formulario de registro para torneo de videojuegos</h2>
+    <hr><br><br>
+    <form action="resultado.html" method="POST">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td>
+                    <label for="nombre">Nombre del Jugador:</label>
+                </td>
+                <td><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="correo">Correo Electrónico:</label>
+                </td>
+                <td><input type="email" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label>
+                </td>
+                <td><input type="number" id="edad" name="eddad" placeholder="Ingresa tu edad" required min="12" max="40"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nickname">Nickname:</label>
+                </td>
+                <td><input type="text" id="nickname" name="nickname" placeholder="Escribe tu nickname del juego" required pattern=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="categoria">Categoría:</label>
+                </td>
+                <td>
+                    <input type="radio" id="categoria" name="categoria" value="principiante" required>
+                    <label for="principiante">Principiante</label>
+                    <input type="radio" id="categoria" name="categoria" value="intermedio" required>
+                    <label for="intermedio">Intermedio</label>
+                    <input type="radio" id="categoria" name="categoria" value="experto" required>
+                    <label for="experto">Experto</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="juegos">Juegos Favoritos:</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">Call of Duty</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">FIFA</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">NBA 2K</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">MADDEN NFL</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">Forza Horizon 5</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">Fallout</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">Battlefield</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">Minecraft</label>
+                    <input type="checkbox" id="#" name="juegos" value="#" required>
+                    <label for="#">Otro</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fecha" class="fecha">Fecha de Inscripción:</label>
+                </td>
+                <td><input type="date" id="fecha" name="fecha" required></td>
+            </tr>
+        </table>
+        <div class="botones">
+            <button><input type="reset" value="Restablecer formulario"></button>
+            <button><input type="submit" value="Enviar formulario"></button>
+        </div>
+    </form>
+</body>
+</html>
