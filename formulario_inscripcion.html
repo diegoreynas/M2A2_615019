@@ -14,7 +14,7 @@
                 <td>
                     <label for="nombre">Nombre del Jugador:</label>
                 </td>
-                <td><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required></td>
+                <td><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required min="3" max="15"></td>
             </tr>
             <tr>
                 <td>
@@ -32,7 +32,7 @@
                 <td>
                     <label for="nickname">Nickname:</label>
                 </td>
-                <td><input type="text" id="nickname" name="nickname" placeholder="Escribe tu nickname del juego" required pattern=""></td>
+                <td><input type="text" id="nickname" name="nickname" placeholder="Escribe tu nickname del juego" pattern="[A-Za-z0-9]+"></td>
             </tr>
             <tr>
                 <td>
@@ -52,31 +52,31 @@
                     <label for="juegos">Juegos Favoritos:</label>
                 </td>
                 <td>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">Call of Duty</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">FIFA</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">NBA 2K</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">MADDEN NFL</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">Forza Horizon 5</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">Fallout</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">Battlefield</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">Minecraft</label>
-                    <input type="checkbox" id="#" name="juegos" value="#" required>
-                    <label for="#">Otro</label>
+                    <input type="checkbox" id="cod" name="juegos" value="cod">
+                    <label for="cod">Call of Duty</label>
+                    <input type="checkbox" id="fifa" name="juegos" value="fifa">
+                    <label for="fifa">FIFA</label>
+                    <input type="checkbox" id="nba" name="juegos" value="nba">
+                    <label for="nba">NBA 2K</label>
+                    <input type="checkbox" id="nfl" name="juegos" value="nfl">
+                    <label for="nfl">MADDEN NFL</label>
+                    <input type="checkbox" id="fh5" name="juegos" value="fh5">
+                    <label for="fh5">Forza Horizon 5</label>
+                    <input type="checkbox" id="fallout" name="juegos" value="fallout">
+                    <label for="fallout">Fallout</label>
+                    <input type="checkbox" id="battlefield" name="juegos" value="battlefield">
+                    <label for="battlefield">Battlefield</label>
+                    <input type="checkbox" id="minecraft" name="juegos" value="minecraft">
+                    <label for="minecraft">Minecraft</label>
+                    <input type="checkbox" id="otro" name="juegos" value="otro">
+                    <label for="otro">Otro</label>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="fecha" class="fecha">Fecha de Inscripción:</label>
                 </td>
-                <td><input type="date" id="fecha" name="fecha" required></td>
+                <td><input type="date" id="fecha" name="fecha" min="2025-01-01" max="2025-12-31" required></td>
             </tr>
         </table>
         <div class="botones">
